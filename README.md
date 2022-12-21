@@ -12,6 +12,6 @@ This can be converted to proper radians `0 to 2pi` using the following function:
 ```GLSL
 float atan2(float y, float x) {
     const float PI2 = 6.2831853071795864769252867665590;
-    return mod(atan(y,x), PI2);
+    return mod(atan(y,x) + (PI2*0.5), PI2);
 }
 ```
